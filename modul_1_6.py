@@ -5,3 +5,5 @@ print(my_dic.values())
 a = my_dic.pop('Ivan')
 
 print(a)
+
+print(my_dic.items())
