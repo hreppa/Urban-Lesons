@@ -7,23 +7,33 @@ def number_gen():
     request = input('Для генерации  числа нажмите клавишу Enter')
     return random.randint(1, 10)
 
+cont = True
+while cont:
 
-first = number_gen()
+    print()
+    first = number_gen()
 
-second = number_gen()
+    second = number_gen()
 
-hird = number_gen()
+    hird = number_gen()
 
-if first == second and second == hird:
-    print('совпали все тпи числа')
+    # print(first, second, hird)
+    num_list = [first, second, hird]
+    print()
 
-elif first == second or second == hird or first == hird:
-    print('совпали два числа')
+    if first == second and second == hird:
+        print(f'{num_list} - совпали все тпи числа')
 
-else:
-    print('ничего не совпало')
+    elif first == second or second == hird or first == hird:
+        print(f'{num_list} - совпали два числа')
 
-print()
+    else:
+        print(f'{num_list} - ничего не совпало')
 
-print(first, second, hird)
 
+    go_ahed = input('продолжить - Enter, закончить - Y')
+    a = go_ahed.lower()
+    if a == 'y':
+        cont = False
+
+print('Игра закончена')
