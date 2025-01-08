@@ -23,5 +23,7 @@ elif first == second or second == hird or first == hird:
 else:
     print('ничего не совпало')
 
+print()
+
 print(first, second, hird)
 
