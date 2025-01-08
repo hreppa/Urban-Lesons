@@ -8,8 +8,8 @@ def number_gen():
     return random.randint(1, 10)
 
 cont = True
-while cont:
 
+while cont:
     print()
     first = number_gen()
 
@@ -17,9 +17,8 @@ while cont:
 
     hird = number_gen()
 
-    # print(first, second, hird)
-    num_list = [first, second, hird]
     print()
+    num_list = [first, second, hird]
 
     if first == second and second == hird:
         print(f'{num_list} - совпали все тпи числа')
@@ -29,8 +28,7 @@ while cont:
 
     else:
         print(f'{num_list} - ничего не совпало')
-
-
+    print()
     go_ahed = input('продолжить - Enter, закончить - Y')
     a = go_ahed.lower()
     if a == 'y':
