@@ -12,7 +12,7 @@ def is_prime_figure(fig):
         return False
 
 
-numbers = [i for i in range(1, 16)] # создаем список от 1 до 15
+numbers = [i for i in range(1, 21)] # создаем список от 1 до 15
 
 print(numbers)
 

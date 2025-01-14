@@ -2,32 +2,19 @@
 
 import random
 
-def num_gen(fig):
-    """
-    генератор двузначного чилса
-    возвращает число и сумму цифр
-    ab (str), ab_sum (int)
-    """
-    a = random.randint(0,fig)
-    # b = random.randint(0,10)
-    # ab = str(a) + str(b)
-    # ab_sum = a + b
-    return a
+def gen_first(fig):
+  return random.randint(3, fig)
 
-def password_gen(figer):
-    code_list = ''
-    for i in range(3, figer):
-        while True:
-            if figer % num_gen(figer) == 0:
-                code_list.join(num_gen())
-                break
-            continue
-    return code_list
+call_nubers = int(input('Введите число первой вставки: - '))
 
-base_number = int(input('Введите число от 3 до 20 для создания кодового числа: '))+1
+list_numbers = ''
+counter = 0
+while counter < call_nubers:
+  first_numbers = gen_first(call_nubers)
+  second_num = abs(first_numbers - call_nubers)
+  # print(gen_first(call_nubers))
+  list_numbers += str(first_numbers) # += str(second_num)
+  list_numbers += str(second_num)
+  counter += 1
 
-code_number = password_gen(base_number)
-print(f'Кодовое число\n\t {code_number}')
-
-print(num_gen()[1], num_gen())
-print(num_gen()[0], num_gen()[1])
+print(list_numbers)
