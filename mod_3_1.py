@@ -56,4 +56,4 @@ print(is_contains('cycle', ['recycling', 'cyclic'], 'cycl')) # No matches
 
 print(is_contains('cycle', ['recycling', 'cyclic'], 'ban')) # No matches
 
-print(calls)
+print(f'всего вызовов функций - {calls}')
