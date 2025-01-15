@@ -37,20 +37,18 @@ def send_email(message, recipient, sender = "university.help@gmail.com"):
     if check_adres(recipient) and check_adres(sender):
         if recipient == sender:
             print('Письмо отправленно самому себе!')
+
         print(f'Письмо отправлено успешно\n\t от \t{sender}\t до \t{recipient}')
         # print(f'письмо отправить не возможно\n\tадрес получателя {recipient} не корректен.')
 
     elif not check_adres(sender):
-        print(f'письмо отправить не возможно\n\tадрес отправителя {sender} не корректен')
+       print(f'письмо отправить не возможно\n\tадрес отправителя {sender} не корректен')
 
     elif not check_adres(recipient):
-        print(f'письмо отправить не возможно\n\tадрес отправителя {recipient} не корректен')
-
-    # elif recipient == sender:
-    #     print('Письмо отправленно самому себе!')
+       print(f'письмо отправить не возможно\n\tадрес получателя {recipient} не корректен')
 
     else:
-        print(f'Письмо отправлено успешно\n\t от \t{sender}\tдо \t{recipient}')
+       print(f'Письмо отправлено успешно\n\t от \t{sender}\tдо \t{recipient}')
 
 
 text_message = 'ПРИВЕТ'
@@ -63,11 +61,15 @@ to_adres_4 = 'anything_2@unigum.education'
 
 from_adres = "university.helpATgmail.com"
 print()
-print(f'отправка письмо 1: \n\t{send_email(text_message, to_adres_1, from_adres)}')
+print('отправка письмо 1:')
+print(f'\n\t{send_email(text_message, to_adres_1, from_adres)}')
 print()
-print(f'отправка письмо 2: \n\t{send_email(text_message, to_adres_2)}')
+print('отправка письмо 2:')
+print(f'\n\t{send_email(text_message, to_adres_2)}')
 print()
-print(f'отправка письмо 3: \n\t{send_email(text_message, to_adres_3)}')
+print('отправка письмо 3:')
+print(f'\n\t{send_email(text_message, to_adres_3)}')
 print()
-print(f'отправка письмо 4: \n\t{send_email(text_message, to_adres_4)}')
+print('отправка письмо 4:')
+print(f'\n\t{send_email(text_message, to_adres_4)}')
 print()
