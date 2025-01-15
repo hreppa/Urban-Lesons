@@ -23,11 +23,10 @@
 
 import re
 def check_adres(adres):
-    patern = r'[\w\.-]+@\w+\.\w+'
+    patern = r'[\w\.-]+@\w+\.\w+'  # шаблон адреса электронной почты
     if re.search(patern, adres):
         return True
     return False
-
 
 
 def send_email(message, recipient, sender = "university.help@gmail.com"):
@@ -51,7 +50,7 @@ def send_email(message, recipient, sender = "university.help@gmail.com"):
     #    print(f'Письмо отправлено успешно\n\t от \t{sender}\tдо \t{recipient}')
 
 
-text_message = 'ПРИВЕТ'
+text_message = 'ПРИВЕТ' # не придумал куда воткнуть
 
 to_adres_1 = 'anything_1@unigum.education' # input('введите адрес получастеля')
 to_adres_2 = 'anything_2#unigum.education'
