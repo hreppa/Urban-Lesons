@@ -20,7 +20,52 @@
 # Здесь <sender> и <recipient> - значения хранящиеся в этих переменных.
 # За один вызов функции выводится только одно из перечисленных уведомлений! Проверки перечислены по мере выполнения.
 
+
+import re
+def check_adres(adres):
+    patern = r'[\w\.-]+@\w+\.\w+'
+    if re.search(patern, adres):
+        return True
+    return False
+
+
+
 def send_email(message, recipient, sender = "university.help@gmail.com"):
-    pass
+    # if @ not in recipient:
+    #     print(f"Невозможно отправить письмо с адреса <{sender}> на адрес <{recipient}>")
+    # if  not in recipient.endswich(".com" or ".ru" or ".net")
+    if check_adres(recipient) and check_adres(sender):
+        if recipient == sender:
+            print('Письмо отправленно самому себе!')
+        print(f'Письмо отправлено успешно\n\t от \t{sender}\t до \t{recipient}')
+        # print(f'письмо отправить не возможно\n\tадрес получателя {recipient} не корректен.')
+
+    elif not check_adres(sender):
+        print(f'письмо отправить не возможно\n\tадрес отправителя {sender} не корректен')
+
+    elif not check_adres(recipient):
+        print(f'письмо отправить не возможно\n\tадрес отправителя {recipient} не корректен')
+
+    # elif recipient == sender:
+    #     print('Письмо отправленно самому себе!')
+
+    else:
+        print(f'Письмо отправлено успешно\n\t от \t{sender}\tдо \t{recipient}')
 
 
+text_message = 'ПРИВЕТ'
+
+to_adres_1 = 'anything_1@unigum.education' # input('введите адрес получастеля')
+to_adres_2 = 'anything_2#unigum.education'
+to_adres_3 = "university.help@gmail.com"
+to_adres_4 = 'anything_2@unigum.education'
+# from_adres = input('введите адрес отправителя')
+
+from_adres = "university.helpATgmail.com"
+print()
+print(f'отправка письмо 1: \n\t{send_email(text_message, to_adres_1, from_adres)}')
+print()
+print(f'отправка письмо 2: \n\t{send_email(text_message, to_adres_2)}')
+print()
+print(f'отправка письмо 3: \n\t{send_email(text_message, to_adres_3)}')
+print()
