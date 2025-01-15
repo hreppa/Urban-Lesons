@@ -47,8 +47,8 @@ def send_email(message, recipient, sender = "university.help@gmail.com"):
     elif not check_adres(recipient):
        print(f'письмо отправить не возможно\n\tадрес получателя {recipient} не корректен')
 
-    else:
-       print(f'Письмо отправлено успешно\n\t от \t{sender}\tдо \t{recipient}')
+    # else:
+    #    print(f'Письмо отправлено успешно\n\t от \t{sender}\tдо \t{recipient}')
 
 
 text_message = 'ПРИВЕТ'
