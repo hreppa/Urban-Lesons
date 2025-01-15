@@ -69,3 +69,5 @@ print(f'отправка письмо 2: \n\t{send_email(text_message, to_adres_
 print()
 print(f'отправка письмо 3: \n\t{send_email(text_message, to_adres_3)}')
 print()
+print(f'отправка письмо 4: \n\t{send_email(text_message, to_adres_4)}')
+print()
