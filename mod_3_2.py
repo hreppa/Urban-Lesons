@@ -35,16 +35,16 @@ def send_email(message, recipient, sender = "university.help@gmail.com"):
     # if  not in recipient.endswich(".com" or ".ru" or ".net")
     if check_adres(recipient) and check_adres(sender):
         if recipient == sender:
-            print('Письмо отправленно самому себе!')
+            print('\033[43mПисьмо отправленно самому себе!\033[0m')
 
-        print(f'Письмо отправлено успешно\n\t от \t{sender}\t до \t{recipient}')
+        print(f'\033[32mПисьмо отправлено успешно\033[0m\n\t от \t{sender}\t кому \t{recipient}')
         # print(f'письмо отправить не возможно\n\tадрес получателя {recipient} не корректен.')
 
     elif not check_adres(sender):
-       print(f'письмо отправить не возможно\n\tадрес отправителя {sender} не корректен')
+       print(f'\033[31m письмо отправить не возможно\033[0m\n\tадрес отправителя {sender} не корректен')
 
     elif not check_adres(recipient):
-       print(f'письмо отправить не возможно\n\tадрес получателя {recipient} не корректен')
+       print(f'\033[31m письмо отправить не возможно\033[0;0m\n\tадрес получателя {recipient} не корректен')
 
     # else:
     #    print(f'Письмо отправлено успешно\n\t от \t{sender}\tдо \t{recipient}')
