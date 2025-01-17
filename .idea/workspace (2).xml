@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc8cbce0-e702-43db-a360-28c44a4e1183" name="Changes" comment="набросок 15.01 18:40" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hreppa&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/hreppa/Urban-Lesons.git",
+    "accountId": "b9ffa5e0-68a6-4cda-a5d3-c6a34eb00ba0"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2rE2J0DqKrsTCURgmLGiV4u3xkB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.leson_1.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.mod_2_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mod_2_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mod_2_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mod_2_4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mod_2_5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mod_2_6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mod_3_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.modul_1_6.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;var__2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/khrep/YandexDisk/Учёба/Урбан Юнивёрсити/Урбан Уроки&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python.mod_2_4">
+    <configuration name="mod_2_4" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Урбан Уроки" />
+      <option name="ENV_FILES" value="$PROJECT_DIR$/.venv" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mod_2_4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mod_2_6" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Урбан Уроки" />
+      <option name="ENV_FILES" value="$PROJECT_DIR$/.venv" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mod_2_6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc8cbce0-e702-43db-a360-28c44a4e1183" name="Changes" comment="" />
+      <created>1736109837933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736109837933</updated>
+    </task>
+    <task id="LOCAL-00001" summary="создали всё с 0 в среде VENV">
+      <option name="closed" value="true" />
+      <created>1736113690639</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736113690639</updated>
+    </task>
+    <task id="LOCAL-00002" summary="variabl my_dic">
+      <option name="closed" value="true" />
+      <created>1736114000148</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736114000148</updated>
+    </task>
+    <task id="LOCAL-00003" summary="my_dic значения на печать">
+      <option name="closed" value="true" />
+      <created>1736114085125</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736114085125</updated>
+    </task>
+    <task id="LOCAL-00004" summary="my_dic список ключ значение на печать">
+      <option name="closed" value="true" />
+      <created>1736114286394</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736114286394</updated>
+    </task>
+    <task id="LOCAL-00005" summary="my_dic список ключ значение на печать">
+      <option name="closed" value="true" />
+      <created>1736114649605</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736114649605</updated>
+    </task>
+    <task id="LOCAL-00006" summary="del &quot;Ivan&quot;">
+      <option name="closed" value="true" />
+      <created>1736114820462</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736114820462</updated>
+    </task>
+    <task id="LOCAL-00007" summary="печать после удаления">
+      <option name="closed" value="true" />
+      <created>1736115080193</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736115080193</updated>
+    </task>
+    <task id="LOCAL-00008" summary="решение доп задания">
+      <option name="closed" value="true" />
+      <created>1736290993438</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736290993438</updated>
+    </task>
+    <task id="LOCAL-00009" summary="решение задичи 1-6">
+      <option name="closed" value="true" />
+      <created>1736291097082</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1736291097082</updated>
+    </task>
+    <task id="LOCAL-00010" summary="решение задичи 2-1 и 2-2">
+      <option name="closed" value="true" />
+      <created>1736297304708</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736297304708</updated>
+    </task>
+    <task id="LOCAL-00011" summary="добавил пустую строку 2-2">
+      <option name="closed" value="true" />
+      <created>1736297751049</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1736297751049</updated>
+    </task>
+    <task id="LOCAL-00012" summary="добавил While">
+      <option name="closed" value="true" />
+      <created>1736299847710</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1736299847710</updated>
+    </task>
+    <task id="LOCAL-00013" summary="придал конечный вид">
+      <option name="closed" value="true" />
+      <created>1736300294535</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1736300294536</updated>
+    </task>
+    <task id="LOCAL-00014" summary="придал конечный вид">
+      <option name="closed" value="true" />
+      <created>1736433186488</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1736433186488</updated>
+    </task>
+    <task id="LOCAL-00015" summary="создал файл для задачи">
+      <option name="closed" value="true" />
+      <created>1736573138344</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1736573138345</updated>
+    </task>
+    <task id="LOCAL-00016" summary="конечный вид решения">
+      <option name="closed" value="true" />
+      <created>1736573266881</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1736573266881</updated>
+    </task>
+    <task id="LOCAL-00017" summary="конечный вид решения">
+      <option name="closed" value="true" />
+      <created>1736576331098</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1736576331098</updated>
+    </task>
+    <task id="LOCAL-00018" summary="набросок решения">
+      <option name="closed" value="true" />
+      <created>1736585053463</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1736585053463</updated>
+    </task>
+    <task id="LOCAL-00019" summary="набросок решения 18:30">
+      <option name="closed" value="true" />
+      <created>1736605932382</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1736605932382</updated>
+    </task>
+    <task id="LOCAL-00020" summary="набросок решения 18:30">
+      <option name="closed" value="true" />
+      <created>1736606442918</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1736606442918</updated>
+    </task>
+    <task id="LOCAL-00021" summary="кодовое число облегчённый вариант">
+      <option name="closed" value="true" />
+      <created>1736881423133</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1736881423133</updated>
+    </task>
+    <task id="LOCAL-00022" summary="решение 1:43">
+      <option name="closed" value="true" />
+      <created>1736894610085</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1736894610085</updated>
+    </task>
+    <task id="LOCAL-00023" summary="приукрасил">
+      <option name="closed" value="true" />
+      <created>1736895787323</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1736895787323</updated>
+    </task>
+    <task id="LOCAL-00024" summary="набросок 15.01 18:40">
+      <option name="closed" value="true" />
+      <created>1736955481234</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1736955481234</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/var_2" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="создали всё с 0 в среде VENV" />
+    <MESSAGE value="variabl my_dic" />
+    <MESSAGE value="my_dic значения на печать" />
+    <MESSAGE value="my_dic список ключ значение на печать" />
+    <MESSAGE value="del &quot;Ivan&quot;" />
+    <MESSAGE value="печать после удаления" />
+    <MESSAGE value="решение доп задания" />
+    <MESSAGE value="решение задичи 1-6" />
+    <MESSAGE value="решение задичи 2-1 и 2-2" />
+    <MESSAGE value="добавил пустую строку 2-2" />
+    <MESSAGE value="добавил While" />
+    <MESSAGE value="придал конечный вид" />
+    <MESSAGE value="создал файл для задачи" />
+    <MESSAGE value="конечный вид решения" />
+    <MESSAGE value="набросок решения" />
+    <MESSAGE value="набросок решения 18:30" />
+    <MESSAGE value="кодовое число облегчённый вариант" />
+    <MESSAGE value="решение 1:43" />
+    <MESSAGE value="приукрасил" />
+    <MESSAGE value="набросок 15.01 18:40" />
+    <option name="LAST_COMMIT_MESSAGE" value="набросок 15.01 18:40" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MODUL_2/leson_1.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MODUL_2/leson_1.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
