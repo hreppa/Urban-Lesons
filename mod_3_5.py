@@ -26,14 +26,12 @@ def clean_num(num):
 
 def get_multiplied_digits(number):
     str_number = clean_num(str(number))
-    print(str_number)
-    if len(str_number) > 1:
-        first = int(str_number[0:])
+    # print(str_number)
+    first = int(str_number[0:])
+    if len(str_number) >= 1:
+        print(first)
         return first * get_multiplied_digits(int(str_number[1:]))
     return first
-
-    # for i in range(len(str_number)):
-    #     print(str_number[i])
 
 
 result = get_multiplied_digits(40203)
