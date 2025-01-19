@@ -20,8 +20,7 @@ def clean_num(num):
     clean = ''
     for i in num:
         if i != '0':
-            clean = clean + i
-
+            clean += i
     return clean
 
 
