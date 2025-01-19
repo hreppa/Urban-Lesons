@@ -15,11 +15,24 @@
 #
 # get_multiplied_digits(40203) -> 4 * get_multiplied_digits(203) -> 4 * 2 * get_multiplied_digits(3) -> 4 * 2 * 3
 
+
+def clean_num(num):
+    clean = ''
+    for i in num:
+        if i != '0':
+            clean = clean + i
+
+    return clean
+
+
 def get_multiplied_digits(number):
-    str_number = str(number)
-    first = int(str_number[1:])
-    if
-    return first * s
+    str_number = clean_num(str(number))
+    print(str_number)
+    if len(str_number) > 1:
+        first = int(str_number[0:])
+        return first * get_multiplied_digits(int(str_number[1:]))
+    return first
+
     # for i in range(len(str_number)):
     #     print(str_number[i])
 
