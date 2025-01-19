@@ -32,3 +32,26 @@
 #
 # ['Able', 'Disable']
 
+def own_root_word(root, *words):
+  same_words = []
+  root_lower = root.lower()
+  print(root_lower)
+  for word in words:
+    word_lower = word.lower()
+    print(word_lower)
+    if root_lower in word_lower:
+      same_words.append(word)
+  return same_words
+
+
+words_1 = ['rich', 'richiest', 'orichalcum', 'cheers', 'richies']
+
+words_2 = ['Able', 'Mable', 'Disable', 'Bagel']
+
+result_1 = own_root_word('rich', 'richiest', 'orichalcum', 'cheers', 'richies')
+
+result_2 = own_root_word('Able', 'Disablement', 'Mable', 'Disable', 'Bagel')
+
+print(result_1)
+print(result_2)
+#print(words_2[0], words_2[1][0])
