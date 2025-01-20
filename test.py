@@ -1,4 +1,4 @@
-a = '4560789'
+a = '450607809'
 
 # def last_num(num):
 #     print(num)
@@ -22,3 +22,14 @@ def clean_num(num):
     return clean
 
 print(clean_num(a))
+experiment = clean_num(a)
+
+def f_num(num):
+    nekst = num[1:]
+    first = num[0]
+    if len(num) > 0:
+        print(first)
+        print(f_num(nekst))
+    # return sum_num
+
+print(f_num(experiment))

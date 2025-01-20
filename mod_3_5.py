@@ -17,6 +17,7 @@
 
 
 def clean_num(num):
+    """"функция удаляет нули из строки"""
     clean = ''
     for i in num:
         if i != '0':
@@ -25,13 +26,15 @@ def clean_num(num):
 
 
 def get_multiplied_digits(number):
-    str_number = clean_num(str(number))
+    # str_number = clean_num(str(number))
+    str_number = str(number)
     # print(str_number)
-    first = int(str_number[0:])
-    if len(str_number) >= 1:
-        print(first)
-        return first * get_multiplied_digits(int(str_number[1:]))
-    return first
+    first = int(str_number[0])
+    if len(str_number) == 1:
+        if str_number[0] == '0':
+            first = 1
+        return first
+    return first * get_multiplied_digits(int(str_number[1:]))
 
 
 result = get_multiplied_digits(40203)
