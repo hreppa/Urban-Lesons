@@ -65,7 +65,14 @@
 def calculate_structure_sum(data):
     for i in range(len(data)):
         print(*data[i],'\t', len(data[i]),'\t', type(data[i]))
-        # if data[i](isinstance, list):
+        if isinstance(data[i], list):
+            return calculate_structure_sum(data[i])
+        elif isinstance(data[i], dict):
+            for key in data[i]:
+                if isinstance(key, str):
+                    return len(key)
+                return key
+
 
 
 
