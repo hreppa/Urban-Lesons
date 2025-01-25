@@ -72,6 +72,10 @@ def calculate_structure_sum(data):
                 if isinstance(key, str):
                     return len(key)
                 return key
+            for data[i][key] in data[i]:
+                if isinstance(data[i][key], str):
+                    return len(data[i][key])
+                return data[i][key]
 
 
 

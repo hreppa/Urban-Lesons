@@ -86,7 +86,11 @@ experiment = clean_num(a)
 # sd.pause()
 
 a = {'cube': 7, 'drum': 8}
+count = 0
 for key in a:
     print(key, a[key])
     if isinstance(key,str):
         print(f'{key} count symbol {len(key)}')
+        count += len(key)
+    count += key
+    if
