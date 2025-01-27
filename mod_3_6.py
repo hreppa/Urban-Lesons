@@ -62,23 +62,73 @@
 #
 # 99
 
-def calculate_structure_sum(data):
-    for i in range(len(data)):
-        print(*data[i],'\t', len(data[i]),'\t', type(data[i]))
-        if isinstance(data[i], list):
-            return calculate_structure_sum(data[i])
-        elif isinstance(data[i], dict):
-            for key in data[i]:
-                if isinstance(key, str):
-                    return len(key)
-                return key
-            for data[i][key] in data[i]:
-                if isinstance(data[i][key], str):
-                    return len(data[i][key])
-                return data[i][key]
+# def calculate_structure_sum(data):
+#     """
+#     функция раскрытия структуры списка
+#     """
+
+def calculate_structure_sum(mass):
+    count = 0
+    for elem in mass:
+        print(elem)
+        if isinstance(elem, str):
+            if elem.isalpha:
+                print(elem)
+                count += len(elem)
+            # elif elem.isdigit:
+            #   return int(elem)
+            elif isinstance(elem, int):
+                print(elem)
+                count += elem
+        elif isinstance(elem, list):
+            print(elem)
+            for i in range(len(elem)):
+                count += calculate_structure_sum(elem[i])
+                # return count_figure_list(elem)
+        elif isinstance(elem, dict):
+            print(elem)
+            for i in elem:
+                # print(calculate_structure_sum(i), calculate_structure_sum(mass[i]))
+                count += (calculate_structure_sum(i) + calculate_structure_sum(elem[i]))
+                # return count_figure_dict(elem)
+        elif isinstance(elem, set):
+            print(elem)
+            count += calculate_structure_sum(elem)
+        else:
+            count += elem
+            break
+    return count
 
 
+def next_try(mass):
+    for elem in mass:
+        # print(elem)
+        # if not isinstance(elem, int)
+        print(type(elem), elem)
+        if isinstance(elem, list):
+            print('это список')
+            for i in elem:
+                print(i, type(i))
+        elif isinstance(elem, dict):
+            print("это библиотека")
+            for i in elem:
+                print(i, elem[i])
+        elif isinstance(elem, tuple):
+            print('это кортеж')
+            for i in elem:
+                print(i)
+                # if not isinstance(i, int):
+                #     print(f'он состоит из - {next_try(i)}: {type(i)}')
+                #     print()
+        elif isinstance(elem, set):
+            print('это множество')
+            for i in elem:
+                print(f'он состоит из - {i}')
 
+def next_try_2(mass):
+    for i in range(len(mass)):
+        print(i)
+        print(next_try(mass[i]))
 
 data_structure = [
 
@@ -94,6 +144,8 @@ data_structure = [
 
 ]
 
-result = calculate_structure_sum(data_structure)
-
-print(result)
+# result = calculate_structure_sum(data_structure)
+#
+# print(result)
+# next_try(data_structure)
+next_try_2(data_structure)

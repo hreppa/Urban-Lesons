@@ -92,5 +92,5 @@ for key in a:
     if isinstance(key,str):
         print(f'{key} count symbol {len(key)}')
         count += len(key)
-    count += key
-    if
+    count += akey
+print(count)
