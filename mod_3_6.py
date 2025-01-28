@@ -134,12 +134,12 @@ def next_try_2(mass):
     if isinstance(mass, int):
         count += mass
     else:
-        for i in range(len(mass)):
+        for i in mass:
             if isinstance(i, list):
-                count += list_extract_and_sum(mass[i])
+                count += list_extract_and_sum(i)
             elif isinstance(i, dict):
-                count += dict_extract_and_sum(mass[i])
-            count += list_extract_and_sum(mass[i])
+                count += dict_extract_and_sum(i)
+            count += list_extract_and_sum(i)
     return count
 
 def list_extract_and_sum(mass):
@@ -152,7 +152,7 @@ def list_extract_and_sum(mass):
 
     count = 0
     if isinstance(mass, int):
-        print(mass)
+        # print(mass)
         count += mass
     else:
         for i in mass:
@@ -176,21 +176,27 @@ def dict_extract_and_sum(mass):
     :return: count (int) сумма значений
     """
     count = 0
-    print(type(mass), mass)
+    # print(type(mass), mass)
     for i in mass:
-        print(i, mass[i])
-        if isinstance(i, str):
-            print(i)
-            count += len(i)
-        else:
-            print(i)
-            count += i
+        # print(i, mass[i])
         if isinstance(mass[i], str):
-            print(mass[i])
+            # print(mass[i])
             count += len(mass[i])
         else:
-            print(mass[i])
+            # print(mass[i])
             count += mass[i]
+        if isinstance(i, str):
+            # print(len(i))
+            count += len(i)
+        else:
+            # print(i)
+            count += i
+        # if isinstance(mass[i], str):
+        #     print(mass[i])
+        #     count += len(mass[i])
+        # else:
+        #     print(mass[i])
+        #     count += mass[i]
     return count
 
 
@@ -211,7 +217,7 @@ data_structure = [
 my_structure = [1, 5, [10, 25], {'jjj4': 56, 'uuuu5': 'tyuri6'}]
 
 print(next_try_2(my_structure))
-print(*list(pik for pik in my_structure if isinstance(pik, dict)))
+# print(*list(pik for pik in my_structure if isinstance(pik, dict)))
 
 # result = calculate_structure_sum(data_structure)
 #
