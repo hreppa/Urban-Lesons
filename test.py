@@ -85,16 +85,30 @@ experiment = clean_num(a)
 #
 # sd.pause()
 
-a = {'cube': 7, 'drum': 8}
+def what_is_that(elem):
+    if isinstance(elem, int):
+        return elem
+    else:
+        return len(elem)
+
+a = {'cube': 7, 'drum': 8, 10: 'stop'}
 count = 0
 for key in a:
-    # print(key, a[key])
-    print(f'ключ - {key}: count symbol - {len(key)}. Его начение {a[key]}')
+    print(key, a[key])
+    print(f'ключ - {key}: count symbol - {what_is_that(key)}. Его начение {a[key]}')
     if isinstance(key,str):
         count += len(key)
     else:
         count += key
     if isinstance(a[key], str):
         count += len(a[key])
-    count += a[key]
-print(count)
+    else:
+        count += a[key]
+print(f'вот это сумма элементов - {count}')
+
+b = [4,6,8]
+schet = 0
+for i in b:
+    print(i)
+    schet += i
+print(schet)

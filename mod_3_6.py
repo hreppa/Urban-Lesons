@@ -106,32 +106,41 @@ def next_try(mass):
         # if not isinstance(elem, int)
         print(type(elem), elem)
         if isinstance(elem, list):
-            print('это список')
-            for i in elem:
-                print(i, type(i))
+            # print('это список')
+            # for i in elem:
+            #     print(i, type(i))
+            return list_extract_and_sum(elem)
         elif isinstance(elem, dict):
-            print("это библиотека")
-            for i in elem:
-                print(i, elem[i])
+            # print("это библиотека")
+            # for i in elem:
+            #     print(i, elem[i])
+            return dict_extract_and_sum(elem)
         elif isinstance(elem, tuple):
-            print('это кортеж')
-            for i in elem:
-                print(i)
+            return list_extract_and_sum(elem)
+            # print('это кортеж')
+            # for i in elem:
+            #     print(i)
                 # if not isinstance(i, int):
                 #     print(f'он состоит из - {next_try(i)}: {type(i)}')
                 #     print()
         elif isinstance(elem, set):
-            print('это множество')
-            for i in elem:
-                print(f'он состоит из - {i}')
+            return list_extract_and_sum(elem)
+            # print('это множество')
+            # for i in elem:
+            #     print(f'он состоит из - {i}')
 
 def next_try_2(mass):
-    for i in range(len(mass)):
-        count = 0
-        print(i, type(mass[i]))
-        print(next_try(mass[i]))
-        count += next_try(mass[i])
-        return count
+    count = 0
+    if isinstance(mass, int):
+        count += mass
+    else:
+        for i in range(len(mass)):
+            if isinstance(i, list):
+                count += list_extract_and_sum(mass[i])
+            elif isinstance(i, dict):
+                count += dict_extract_and_sum(mass[i])
+            count += list_extract_and_sum(mass[i])
+    return count
 
 def list_extract_and_sum(mass):
     """
@@ -142,13 +151,20 @@ def list_extract_and_sum(mass):
     """
 
     count = 0
-    for i in mass:
-        if isinstance(i, str):
+    if isinstance(mass, int):
+        print(mass)
+        count += mass
+    else:
+        for i in mass:
+            print(i)
+            # if isinstance(i, str):
             if isinstance(i, str):
-                return count += len(len(i))
+                count += len(i)
             elif isinstance(i, list):
                 return list_extract_and_sum(i)
-            return count += i
+            else:
+                count += i
+    return count
 
 
 def dict_extract_and_sum(mass):
@@ -160,13 +176,23 @@ def dict_extract_and_sum(mass):
     :return: count (int) сумма значений
     """
     count = 0
+    print(type(mass), mass)
     for i in mass:
+        print(i, mass[i])
         if isinstance(i, str):
-            return count += len(len(i))
-        return count += i
+            print(i)
+            count += len(i)
+        else:
+            print(i)
+            count += i
         if isinstance(mass[i], str):
-            return count += len(len(mass[i]))
-        return count += mass[i]
+            print(mass[i])
+            count += len(mass[i])
+        else:
+            print(mass[i])
+            count += mass[i]
+    return count
+
 
 data_structure = [
 
@@ -182,8 +208,13 @@ data_structure = [
 
 ]
 
+my_structure = [1, 5, [10, 25], {'jjj4': 56, 'uuuu5': 'tyuri6'}]
+
+print(next_try_2(my_structure))
+print(*list(pik for pik in my_structure if isinstance(pik, dict)))
+
 # result = calculate_structure_sum(data_structure)
 #
 # print(result)
 # next_try(data_structure)
-next_try_2(data_structure)
+# next_try_2(data_structure)
