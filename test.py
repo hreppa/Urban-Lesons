@@ -88,9 +88,13 @@ experiment = clean_num(a)
 a = {'cube': 7, 'drum': 8}
 count = 0
 for key in a:
-    print(key, a[key])
+    # print(key, a[key])
+    print(f'ключ - {key}: count symbol - {len(key)}. Его начение {a[key]}')
     if isinstance(key,str):
-        print(f'{key} count symbol {len(key)}')
         count += len(key)
-    count += akey
+    else:
+        count += key
+    if isinstance(a[key], str):
+        count += len(a[key])
+    count += a[key]
 print(count)

@@ -127,8 +127,46 @@ def next_try(mass):
 
 def next_try_2(mass):
     for i in range(len(mass)):
-        print(i)
+        count = 0
+        print(i, type(mass[i]))
         print(next_try(mass[i]))
+        count += next_try(mass[i])
+        return count
+
+def list_extract_and_sum(mass):
+    """
+    функция парсит список и суммирует его числа
+    или длину строк
+    :param mass: (list) список
+    :return: (int) сумма значений
+    """
+
+    count = 0
+    for i in mass:
+        if isinstance(i, str):
+            if isinstance(i, str):
+                return count += len(len(i))
+            elif isinstance(i, list):
+                return list_extract_and_sum(i)
+            return count += i
+
+
+def dict_extract_and_sum(mass):
+    """
+    функция парсит библиотеку и суммирует его числа
+    в ключах и значениях
+
+    :param mass: (dict) передаются множество
+    :return: count (int) сумма значений
+    """
+    count = 0
+    for i in mass:
+        if isinstance(i, str):
+            return count += len(len(i))
+        return count += i
+        if isinstance(mass[i], str):
+            return count += len(len(mass[i]))
+        return count += mass[i]
 
 data_structure = [
 
