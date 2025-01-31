@@ -1,5 +1,6 @@
 a = '450607809'
 
+
 # def last_num(num):
 #     print(num)
 #     a = len(num)
@@ -24,8 +25,9 @@ def clean_num(num):
 
     return clean
 
-print(clean_num(a))
-experiment = clean_num(a)
+
+# print(clean_num(a))
+# experiment = clean_num(a)
 
 # def f_num(num):
 #     nekst = num[1:]
@@ -91,12 +93,34 @@ def what_is_that(elem):
     else:
         return len(elem)
 
+
+def list_is(elem):
+    count = 0
+    for i in elem:
+        if isinstance(i, )
+
+
+def structure_is(elem):
+    global digit_sum
+    if not what_is_that(elem):
+        for i in elem:
+            count = 0
+            if isinstance(elem, list):
+
+    else:
+        return what_is_that(elem)
+
+
+2356
+
 a = {'cube': 7, 'drum': 8, 10: 'stop'}
+
 count = 0
+
 for key in a:
     print(key, a[key])
     print(f'ключ - {key}: count symbol - {what_is_that(key)}. Его начение {a[key]}')
-    if isinstance(key,str):
+    if isinstance(key, str):
         count += len(key)
     else:
         count += key
@@ -104,11 +128,15 @@ for key in a:
         count += len(a[key])
     else:
         count += a[key]
+
 print(f'вот это сумма элементов - {count}')
 
-b = [4,6,8]
+b = [4, 6, 8]
+
 schet = 0
+
 for i in b:
     print(i)
     schet += i
+
 print(schet)

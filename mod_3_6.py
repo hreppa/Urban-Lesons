@@ -131,6 +131,7 @@ def next_try(mass):
 
 def next_try_2(mass):
     count = 0
+    print(f'счётчик общий - {count}')
     if isinstance(mass, int):
         count += mass
     else:
@@ -139,7 +140,8 @@ def next_try_2(mass):
                 count += list_extract_and_sum(i)
             elif isinstance(i, dict):
                 count += dict_extract_and_sum(i)
-            count += list_extract_and_sum(i)
+            else:
+                count += list_extract_and_sum(i)
     return count
 
 def list_extract_and_sum(mass):
@@ -152,7 +154,7 @@ def list_extract_and_sum(mass):
 
     count = 0
     if isinstance(mass, int):
-        # print(mass)
+        print(mass)
         count += mass
     else:
         for i in mass:
@@ -175,10 +177,11 @@ def dict_extract_and_sum(mass):
     :param mass: (dict) передаются множество
     :return: count (int) сумма значений
     """
+
     count = 0
     # print(type(mass), mass)
     for i in mass:
-        # print(i, mass[i])
+        print(i, mass[i])
         if isinstance(mass[i], str):
             # print(mass[i])
             count += len(mass[i])
@@ -214,9 +217,14 @@ data_structure = [
 
 ]
 
-my_structure = [1, 5, [10, 25], {'jjj4': 56, 'uuuu5': 'tyuri6'}]
+my_structure = [
+    1, 5,
+    [10, 25],
+    {'jjj4': 56, 'uuuu5': 'tyuri6'}
+]
 
 print(next_try_2(my_structure))
+print(next_try_2(data_structure))
 # print(*list(pik for pik in my_structure if isinstance(pik, dict)))
 
 # result = calculate_structure_sum(data_structure)
